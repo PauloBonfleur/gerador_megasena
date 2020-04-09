@@ -10,9 +10,9 @@ class telapython:
             [sg.Button('Criar Jogo')],
             [sg.Output(size=(30, 20))]
         ]
-        #Janela
+        # Janela
         self.janela = sg.Window('Gerador de Jogos da Megasena').layout(layout)
-        #Dados
+        # Dados
         self.button, self.values = self.janela.Read()
 
     def mega_sena(self, n):
