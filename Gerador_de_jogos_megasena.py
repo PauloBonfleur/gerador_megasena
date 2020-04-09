@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 from random import randint
 
 
-class telapython:
+class Telapython:
     def __init__(self):
         # Layout
         layout = [
@@ -37,19 +37,17 @@ class telapython:
             im = set()
             result = []
 
-
-
     def iniciar(self):
-        if telapython.mega_sena(self, self.values['Digite a quantidade de jogos que deseja fazer :']) != None:
-            print(telapython.mega_sena(self, self.values['Digite a quantidade de jogos que deseja fazer :']))
+        if Telapython.mega_sena(self, self.values['Digite a quantidade de jogos que deseja fazer :']) != None:
+            print(Telapython.mega_sena(self, self.values['Digite a quantidade de jogos que deseja fazer :']))
 
         while True:
             self.button, self.values = self.janela.Read()
             print()
-            if telapython.mega_sena(self, self.values['Digite a quantidade de jogos que deseja fazer :']) != None:
-                print(telapython.mega_sena(self, self.values['Digite a quantidade de jogos que deseja fazer :']))
+            if Telapython.mega_sena(self, self.values['Digite a quantidade de jogos que deseja fazer :']) != None:
+                print(Telapython.mega_sena(self, self.values['Digite a quantidade de jogos que deseja fazer :']))
 
 
-tela = telapython()
+tela = Telapython()
 tela.iniciar()
 
